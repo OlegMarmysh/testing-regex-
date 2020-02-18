@@ -12,7 +12,7 @@ function edwardDecrypt(message) {
     if(valueFormat.test(message)){
         alert('a message can only consist of lowercase English letters');
     }else{
-        answerValueText.innerHTML = (message.replace(/([a-z])\1/g, ''));
+        answerValueText.innerHTML = (message.replace(/(.)\1/g, ''));
     }
     
 }
